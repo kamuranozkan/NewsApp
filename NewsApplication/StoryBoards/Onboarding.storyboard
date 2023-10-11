@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Page-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="OnboardingPage" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-9s-CYi">
+                                <rect key="frame" x="95" y="672" width="203" height="50"/>
+                                <color key="backgroundColor" red="0.97811859850000005" green="0.4180120826" blue="0.035053499039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Explore">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UbL-dY-Z7D"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding" translatesAutoresizingMaskIntoConstraints="NO" id="MVe-ii-rUZ">
+                                <rect key="frame" x="16" y="209" width="359" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="nfw-lH-76N"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzZ-jV-Le0">
+                                <rect key="frame" x="75" y="134" width="243" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="K4g-FJ-v7b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="58"/>
+                                <color key="textColor" red="0.97811859850000005" green="0.4180120826" blue="0.035053499039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3K-nM-UEo">
+                                <rect key="frame" x="25" y="511" width="343" height="101"/>
+                                <string key="text">Here, you can find news on different topics from every corner of the world. Let's dive in!
+
+
+
+
+</string>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="22"/>
+                                <color key="textColor" red="0.1725490093" green="0.2470588088" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MVe-ii-rUZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9vL-s5-XvD"/>
+                            <constraint firstItem="MVe-ii-rUZ" firstAttribute="top" secondItem="yzZ-jV-Le0" secondAttribute="bottom" constant="5" id="ESx-ll-Nr5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yzZ-jV-Le0" secondAttribute="trailing" constant="75" id="HCS-uM-Wwp"/>
+                            <constraint firstItem="n3K-nM-UEo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="RTq-sF-Ayb"/>
+                            <constraint firstItem="yzZ-jV-Le0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="75" id="V6e-3d-A5n"/>
+                            <constraint firstItem="qBN-9s-CYi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="95" id="VaT-Q1-9FA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MVe-ii-rUZ" secondAttribute="trailing" constant="18" id="WdO-RQ-flv"/>
+                            <constraint firstItem="n3K-nM-UEo" firstAttribute="top" secondItem="MVe-ii-rUZ" secondAttribute="bottom" constant="22" id="gmu-Yi-4I9"/>
+                            <constraint firstItem="qBN-9s-CYi" firstAttribute="top" secondItem="n3K-nM-UEo" secondAttribute="bottom" constant="60" id="lgL-6W-Bpe"/>
+                            <constraint firstItem="yzZ-jV-Le0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="nNv-7F-0d6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n3K-nM-UEo" secondAttribute="trailing" constant="25" id="p4h-6M-xDZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qBN-9s-CYi" secondAttribute="trailing" constant="95" id="yNi-q5-Se4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onboardingImage" destination="MVe-ii-rUZ" id="uu8-eH-sh2"/>
+                        <outlet property="skipButtonOutlet" destination="qBN-9s-CYi" id="vJg-Os-DES"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.091603053435115" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboarding" width="1024" height="1024"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News-->
+        <scene sceneID="7Ke-to-9M5">
+            <objects>
+                <navigationController id="VHJ-DR-m3O" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper.circle" catalog="system" selectedImage="newspaper.circle" id="Jut-L8-XLO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RUi-sz-AnB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mKS-KK-3Ev" kind="relationship" relationship="rootViewController" id="ZwD-VA-Ydh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4y-PU-mqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-560" y="451"/>
+        </scene>
+        <!--Container-->
+        <scene sceneID="v4l-NR-7Zx">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Container" storyboardName="Container" referencedIdentifier="Container" id="mKS-KK-3Ev" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ge2-Ig-sNS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQ6-6j-HCH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="858"/>
+        </scene>
+        <!--SavedNews-->
+        <scene sceneID="5a9-v4-XeC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SavedNews" storyboardName="SavedNews" referencedIdentifier="SavedNews" id="sy0-LJ-1MW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6LE-ye-roV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUr-HC-mWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="853"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="4g5-hM-Hsr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Profile" storyboardName="Profile" referencedIdentifier="Profile" id="WWU-L1-Rpl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NSn-Kb-RIK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHZ-nv-yIE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="845"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="dbP-sw-elm">
+            <objects>
+                <navigationController id="Xnr-lz-gPZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle.fill" catalog="system" selectedImage="person.circle.fill" id="4rL-1a-agn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jrh-ae-1Yf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WWU-L1-Rpl" kind="relationship" relationship="rootViewController" id="p00-Bc-kCN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9b-Wn-5fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="451"/>
+        </scene>
+        <!--Favorite News-->
+        <scene sceneID="jbL-Ek-ka5">
+            <objects>
+                <navigationController id="al7-5y-OFN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite News" image="star.circle" catalog="system" selectedImage="star.circle" id="jLw-VR-1gm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HI6-5Z-6sd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sy0-LJ-1MW" kind="relationship" relationship="rootViewController" id="uKd-VG-TKw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xm-vt-zSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="451"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xKP-wj-a7k">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="16h-c8-3pi" customClass="TabBarController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j8G-5J-wY1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VHJ-DR-m3O" kind="relationship" relationship="viewControllers" id="3Hm-Fz-gvs"/>
+                        <segue destination="al7-5y-OFN" kind="relationship" relationship="viewControllers" id="3rc-1Y-rwj"/>
+                        <segue destination="Xnr-lz-gPZ" kind="relationship" relationship="viewControllers" id="IYg-O9-1wk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgg-1t-ne3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="-237"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="newspaper.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="star.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
